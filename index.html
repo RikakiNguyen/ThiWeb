@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Link Font chữ Roboto sử dụng trong web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Link icon sử dụng trong web -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Link javascipt sử dụng trong web -->
+   <script src="./js/script.js" defer></script>
+    <title> NVNH Shop | Cửa hàng Laptop</title>
+</head>
+<body>
+
+    <!-- Phần Đầu trang web - Header -->
+    <header>
+        <div class="search-bar hidden" id="searchBar">
+            <form class="search-form">
+                <input type="text" class="search-input" id="searchInput" placeholder="Tìm kiếm...">
+            </form>
+        </div>
+        <div class="header-menu-bar">
+            <a href="./index.html" style="text-decoration: none;"><h1 class="header-logo">NVNH <span>SHOP</span></h1></a>
+            <ul>
+                <li><a href="./index.html"><i class="fas fa-home"></i> TRANG CHỦ</a></li>
+                <li><a href="#"><i class="fa-solid fa-laptop"></i> LAPTOP <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="./laptop_office.html" target="_blank">VĂN PHÒNG</a></li>
+                            <li><a href="./laptop_gaming.html" target="_blank">GAMING</a></li>
+                            <li><a href="./index.html#FLASH">FLASH-SALE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-code-branch"></i> HÃNG <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="./index.html#gaming">ASUS</a></li>
+                            <li><a href="./index.html#gaming">ACER</a></li>
+                            <li><a href="./index.html#gaming">MSI</a></li>
+                            <li><a href="./index.html#vanphong">DELL</a></li>
+                            <li><a href="./index.html#vanphong">LENOVO</a></li>
+                            <li><a href="./index.html#vanphong">MACBOOK</a></li>
+                            <li><a href="./index.html#vanphong">...</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" title="Chúc mừng bạn là người may mắn!"><i class="fa-brands fa-threads"></i> KHUYẾN MẠI</a></li>
+                <a href="#" class="master" title="Giỏ hàng"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="./login.html" class="master" title="Đăng nhập/Đăng ký"><i class="fa-solid fa-user"></i></a>
+                <a href="#" class="master" id="searchIcon" title="Tìm kiếm"><i class="fa-solid fa-search"></i></a>
+            </ul>
+        </div>
+    </header><br><br><br><br><br>
+
+
+    <!-- Phần Quảng cáo về cửa hàng ở trang chủ - Ads home -->
+    <section>
+        <div class="container">
+            <div class="left-content">
+                <div class="Ads-home">
+                    <div class="Ads-home-pic">
+                        <a href="./images/bg1.png"><img src="./images/bg1.png" alt="Bên trong cửa hàng"></a>
+                        <div class="Ads-home-text">
+                            <h3><span>Kính Chào Quý Khách</span></h3><br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="link-video">
+                    <iframe width="260" height="215" src="https://www.youtube.com/embed/5choWKro3DI?si=3uY5YlJEA37ajgMG" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="260" height="215" src="https://www.youtube.com/embed/mWikHKT0EBw?si=y9HHwsaqqlPywF71" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
+
+
+    <!-- Phần thể loại sản phẩm - Category products-->
+    <section>
+        <div class="container-category">
+            <h1>DANH MỤC SẢN PHẨM</h1><br><br><br>
+            <div class="row-category">
+                <!-- Laptop Gaming -->
+                <div class="service">
+                    <a href="./laptop_gaming.html" target="_blank">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Laptop Gaming</h2>
+                    <p>Dòng laptop chuyên về chơi game.</p></a>
+                </div>
+                <!-- Laptop Văn phòng -->
+                <div class="service">
+                    <a href="./laptop_office.html" target="_blank">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Laptop Văn phòng</h2>
+                    <p>Dòng laptop chuyên về làm việc, học tập.</p></a>
+                </div>
+                <!-- Laptop Custom -->
+                <div class="service">
+                    <a href="./index.html#custom" target="_blank">
+                    <i class="fa-solid fa-laptop-medical"></i>
+                    <h2>Laptop Custom</h2>
+                    <p>Dòng laptop được xây dựng theo yêu cầu của khách.</p></a>
+                </div>
+                <!-- Laptop Xách tay-->
+                <div class="service">
+                    <a href="./index.html#custom" target="_blank">
+                    <i class="fa-solid fa-house-laptop"></i>
+                    <h2>Laptop Xách tay</h2>
+                    <p>Dòng laptop nội địa của nhà sản xuất.</p></a>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
+
+
+    <!-- Phần Flash sale -->
+    <section>
+        <div class="container-prod" style="background: red; border-radius: 20px;">
+            <!-- Tiêu đề -->
+            <div class="section-title" id="FLASH">
+                <a href="./images/flash-sale.jpg">
+                <img style="border-radius: 20px; border: 1px; box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);" src="./images/flash-sale.jpg" alt="Tiêu đề">
+                </a>
+            </div><br>
+         
+            <div class="products-container">
+         
+                <div class="product">
+                    <a href="./images/ASUS.webp"><img src="./images/ASUS.webp" alt=""></a>
+                    <h3>Asus TUF Gaming F15 Dash</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>25.890.000đ</s>
+                    <div class="price">18.990.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buys">Mua ngay</a>
+                        <!-- <a href="#" class="cart">Thêm vào giỏ</a> -->
+                    </div>
+                </div>
+         
+                <div class="product" data-target="p-1">
+                    <a href="./images/ACER.webp"><img src="./images/ACER.webp" alt=""></a>
+                    <h3>Acer Nitro 5 Tiger X Gaming</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>29.990.000đ</s>
+                    <div class="price">26.490.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buys">Mua ngay</a>
+                        <!-- <a href="#" class="cart">Thêm vào giỏ</a> -->
+                    </div>
+                </div>
+         
+                <div class="product" data-target="p-1">
+                    <a href="./images/mac-air-m2-silver-6.webp"><img src="./images/mac-air-m2-silver-6.webp" alt=""></a>
+                    <h3>MacBook Air M2 16" (8GB/256GB)</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>29.990.000đ</s>
+                    <div class="price">26.990.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buys">Mua ngay</a>
+                        <!-- <a href="#" class="cart">Thêm vào giỏ</a> -->
+                    </div>
+                </div>
+         
+                <div class="product" data-target="p-1">
+                    <a href="./images/VIVOBOOK.webp"><img src="./images/VIVOBOOK.webp" alt=""></a>
+                    <h3>Asus Vivobook 15 OLED A1505VA-L</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>20.990.000đ</s>
+                    <div class="price">18.490.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buys">Mua ngay</a>
+                        <!-- <a href="#" class="cart">Thêm vào giỏ</a> -->
+                    </div>
+                </div>
+            </div>
+    </section><br>
+
+
+    <!-- Phần Sản phẩm Gaming - Products Gaming -->
+    <section>
+        <div class="container-prod">
+            <!-- Tiêu đề -->
+            <div class="section-title" id="gaming">
+                <a href="./images/laptopGaming.webp">
+                <img style="border-radius: 20px; border: 1px; box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);" src="./images/laptopGaming.webp" alt="Tiêu đề">
+                </a>
+            </div><br>
+         
+            <div class="products-container">
+         
+                <div class="product">
+                    <a href="./images/maycuat.webp"><img src="./images/maycuat.webp" alt=""></a>
+                    <h3>Asus TUF Gaming F15 FX506LHB-HN188W</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>20.990.000đ</s>
+                    <div class="price">14.990.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Mua ngay</a>
+                        <a href="#" class="cart">Thêm vào giỏ</a>
+                    </div>
+                </div>
+         
+                <div class="product">
+                    <a href="./images/ASUS.webp"><img src="./images/ASUS.webp" alt=""></a>
+                    <h3>Asus TUF Gaming F15 FX506HF-HN014W</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>21.990.000đ</s>
+                    <div class="price">16.990.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Mua ngay</a>
+                        <a href="#" class="cart">Thêm vào giỏ</a>
+                    </div>
+                </div>
+         
+                <div class="product">
+                    <a href="./images/hn099w-1.webp"><img src="./images/hn099w-1.webp" alt=""></a>
+                    <h3>Asus TUF Gaming F15 FX507ZC4-HN099W</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>27.990.000đ</s>
+                    <div class="price">22.990.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Mua ngay</a>
+                        <a href="#" class="cart">Thêm vào giỏ</a>
+                    </div>
+                </div>
+         
+                <div class="product">
+                    <a href="./images/msi-gaming-gf63-12.webp"><img src="./images/msi-gf63-12u-1.webp" alt=""></a>
+                    <h3>MSI Gaming Thin GF63 12UCX-841VN</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>17.000.000đ</s>
+                    <div class="price">15.990.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Mua ngay</a>
+                        <a href="#" class="cart">Thêm vào giỏ</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="./images/ACER2.webp"><img src="./images/ACER2.webp" alt=""></a>
+                    <h3>Acer Ideapad Gaming SuperSpeed</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>25.890.000đ</s>
+                    <div class="price">18.590.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Mua ngay</a>
+                        <a href="#" class="cart">Thêm vào giỏ</a>
+                    </div>
+                </div>
+         
+                <div class="product">
+                    <a href="./images/ACER.webp"><img src="./images/ACER.webp" alt=""></a>
+                    <h3>Acer Nitro 5 Tiger Z AN515-58-79UJ</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>29.990.000đ</s>
+                    <div class="price">26.490.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Mua ngay</a>
+                        <a href="#" class="cart">Thêm vào giỏ</a>
+                    </div>
+                </div>
+         
+                <div class="product">
+                    <a href="./images/msi-gaming-gf63-12.webp"><img src="./images/msi-gaming-gf63-12.webp" alt=""></a>
+                    <h3>MSI Gaming Thin GF63 11SC-664VN</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>19.490.000đ</s>
+                    <div class="price">13.990.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Mua ngay</a>
+                        <a href="#" class="cart">Thêm vào giỏ</a>
+                    </div>
+                </div>
+         
+                <div class="product">
+                    <a href="./images/gigabytesale.webp"><img src="./images/gigabytesale.webp" alt=""></a>
+                    <h3>Gigabyte Gaming G5 HyperCarry</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>( 250 )</span>
+                    </div>
+                    <s>27.490.000đ</s>
+                    <div class="price">14.490.000đ</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Mua ngay</a>
+                        <a href="#" class="cart">Thêm vào giỏ</a>
+                    </div>
+                </div>
+            </div><br><br>
+            <!-- Next sản phẩm -->
+            <div class="next-product">
+                <div class="middle-btn">
+                  <center>
+                    <button class="btn">Nhấn để xem thêm 999 sản phẩm</button>
+                  </center>
+              </div>
+            </div>
+    </section>
+
+
+    <!-- Phần Sản phẩm Văn phòng - Products Office -->
+    <section>
+            <div class="container-prod">
+                <!-- Tiêu đề -->
+                <div class="section-title" id="vanphong">
+                    <a href="./images/laptopSV_VP.webp">
+                    <img style="border-radius: 20px; border: 1px; box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);" src="./images/laptopSV_VP.webp" alt="Tiêu đề">
+                    </a>
+                </div><br>
+             
+                <div class="products-container">
+             
+                    <div class="product">
+                        <a href="./images/HP.webp"><img src="./images/HP.webp" alt=""></a>
+                        <h3>HP 14" 1.5K 14SEP0128TU</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <s>18.790.000đ</s>
+                        <div class="price">16.990.000đ</div>
+                        <div class="buttons">
+                            <a href="#" class="buy">Mua ngay</a>
+                            <a href="#" class="cart">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+             
+                    <div class="product">
+                        <a href="./images/VIVOBOOK2.webp"><img src="./images/VIVOBOOK2.webp" alt=""></a>
+                        <h3>Asus Vivobook Go 14 E1404FA-NK177W</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <s>14.490.000đ</s>
+                        <div class="price">12.990.000đ</div>
+                        <div class="buttons">
+                            <a href="#" class="buy">Mua ngay</a>
+                            <a href="#" class="cart">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+             
+                    <div class="product">
+                        <a href="./images/HP2.webp"><img src="./images/HP2.webp" alt=""></a>
+                        <h3>HP Pro 15" 2K 15SFQ5159TU</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <s>20.500.000đ</s>
+                        <div class="price">15.790.000đ</div>
+                        <div class="buttons">
+                            <a href="#" class="buy">Mua ngay</a>
+                            <a href="#" class="cart">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+             
+                    <div class="product">
+                        <a href="./images/VIVOBOOK.webp"><img src="./images/VIVOBOOK.webp" alt=""></a>
+                        <h3>Asus Vivobook 15 OLED A1505VA-L</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <s>20.890.000đ</s>
+                        <div class="price">18.490.000đ</div>
+                        <div class="buttons">
+                            <a href="#" class="buy">Mua ngay</a>
+                            <a href="#" class="cart">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+    
+                    <div class="product">
+                        <a href="./images/surface.webp"><img src="./images/surface.webp" alt=""></a>
+                        <h3>Surface Pro M800 (8GB/256GB)</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <s>25.890.000đ</s>
+                        <div class="price">18.990.000đ</div>
+                        <div class="buttons">
+                            <a href="#" class="buy">Mua ngay</a>
+                            <a href="#" class="cart">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+             
+                    <div class="product">
+                        <a href="./images/macm1max.webp"><img src="./images/macm1max.webp" alt=""></a>
+                        <h3>MacBook Pro 16" (32GB/512GB)</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <s>80.990.000đ</s>
+                        <div class="price">75.990.000đ</div>
+                        <div class="buttons">
+                            <a href="#" class="buy">Mua ngay</a>
+                            <a href="#" class="cart">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+             
+                    <div class="product">
+                        <a href="./images/macmoi256.webp"><img src="./images/macmoi256.webp" alt=""></a>
+                        <h3>MacBook Air M1 13" (8GB/256GB)</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <s>27.890.000đ</s>
+                        <div class="price">18.990.000đ</div>
+                        <div class="buttons">
+                            <a href="#" class="buy">Mua ngay</a>
+                            <a href="#" class="cart">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+             
+                    <div class="product">
+                        <a href="./images/MacBook-Pro-Core-i7.jpg"><img src="./images/MacBook-Pro-Core-i7.jpg" alt=""></a>
+                        <h3>MacBook Pro 14" (16GB/521GB)</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <s>45.990.000đ</s>
+                        <div class="price">41.990.000đ</div>
+                        <div class="buttons">
+                            <a href="#" class="buy">Mua ngay</a>
+                            <a href="#" class="cart">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                </div><br><br>
+                <!-- Next sản phẩm -->
+                <div class="next-product">
+                    <div class="middle-btn">
+                        <center>
+                            <button class="btn">Nhấn để xem thêm 999 sản phẩm</button>
+                        </center>
+                    </div>
+                </div>
+    </section>
+   
+
+    <!-- Phần về Laptop Custom + Laptop Xách tay -->
+    <section>
+        <div class="Ads" id="custom">
+            <div class="Ads-text">
+                <br><br><br><br><br>
+                <h3><span>Ưu đãi Laptop Custom và Laptop Xách tay</span></h3><br>
+                <a href="#" class="btn">Tìm hiểu ngay qua SĐT: 0967326154</a>
+            </div>
+        </div>
+    </section><br>
+
+
+    <!-- Phần Cuối trang web - Footer -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-row">
+                <!-- Cột thứ 1 -->
+                <div class="footer-col">
+                    <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                    <ul>
+                        <li><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                        <li><a href="#">Chính Sách Vận Chuyển</a></li>
+                        <li><a href="#">Trả góp 0% Lãi Suất</a></li>
+                    </ul>
+                </div>
+                <!-- Cột thứ 2 -->
+                <div class="footer-col">
+                    <h4>VỀ CHÚNG TÔI</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu Về Shop</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                        <li><a href="#">Điều Khoản Shop</a></li>
+                        <li><a href="#">Hợp Đồng Mua Bán</a></li>
+                    </ul>
+                </div>
+                <!-- Cột thứ 3 -->
+                <div class="footer-col">
+                    <h4>DANH MỤC SẢN PHẨM</h4>
+                    <ul>
+                        <li><a href="./laptop_gaming.html" target="_blank">Laptop Gaming</a></li>
+                        <li><a href="./laptop_office.html" target="_blank">Laptop Văn Phòng</a></li>
+                        <li><a href="./index.html#custom" target="_blank">Laptop Custom</a></li>
+                    </ul>
+                </div>
+                <!-- Cột thứ 4 -->
+                <div class="footer-col">
+                    <h4>Ý KIẾN NGƯỜI DÙNG</h4>
+                    <form action="">
+                        <input type="text" placeholder="Nhập Tên" class="inputName">
+                        <input type="text" placeholder="Ý Kiến Của Bạn" class="inputComment">
+                        <input type="submit" value="Nhận Xét" class="inputSubmit">
+                    </form>
+                </div>
+            </div><hr>
+            <!-- Cột thứ 5 - Dẫn các đường link -->
+            <div class="footer-row">
+                <div class="col">
+                    <p>© NVNH SHOP 2023: Bản Quyền Thuộc Về Nguyễn Văn Ngọc Hãi</p>
+                    <p>Link Website tham khảo: <a href="https://hoanghamobile.com/" target="_blank" title="Nhấn để di chuyển">Hoanghamobile.com</a> | <a href="https://fptshop.com.vn/" target="_blank" title="Nhấn để di chuyển">Fptshop.com.vn</a> | <a href="https://youtube.com" target="_blank" title="Nhấn để di chuyển">YouTube</a></p>
+                </div>
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/profile.php?id=100011123718736&mibextid=eHce3h"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011123718736&mibextid=eHce3h"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011123718736&mibextid=eHce3h"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011123718736&mibextid=eHce3h"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

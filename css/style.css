@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+  
+
+/* CSS phần Header */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-menu-bar {
+    background-color: #00483d;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative;
+    box-shadow: 0 0 8px 0 gray;
+}
+  
+.header-logo {
+    color: #fff;
+    font-size: 30px;
+}
+  
+.header-logo span {
+    color: aqua;
+}
+  
+.header-menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+  
+.header-menu-bar ul a.master{
+    text-decoration: none;
+    color: #fff;
+    width: 80px;
+    margin: auto;
+    padding: 10px 30px;
+}
+  
+a.master{
+    font-size: 25px;
+}
+  
+a.master:hover{
+    background: turquoise;
+    border-radius: 20px;
+}
+  
+.header-menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+  
+.header-menu-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.45s;
+}
+  
+.header-menu-bar ul li a:hover {
+    color: orangered;
+}
+  
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #00483d;
+    z-index: 2;
+}
+  
+.header-menu-bar ul li:hover .dropdown {
+    display: block;
+}
+  
+.dropdown ul {
+    list-style: none;
+    display: block;
+    margin: 10px;
+    padding: 0;
+}
+  
+.dropdown ul li {
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+  
+/* Search có Javascript _ Hiện thanh tìm kiếm */
+.search-bar {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+  
+.search-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+.search-input {
+    width: 100%;
+    padding: 10px;
+}
+  
+.hidden {
+      display: none;
+}
+  
+/* Hiện thanh tìm kiếm */ 
+.search-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+.search-input {
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* CSS Phần Quảng cáo về cửa hàng ở trang chủ */
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 12%;
+}
+  
+.left-content {
+    flex: 1;
+    position: relative;
+    margin: 0 10px;
+}
+  
+.Ads-home-pic img {
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+}
+  
+.Ads-home-text {
+    position: absolute;
+    top: 18%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+  
+h3 span{
+    background: #00483d;
+}
+  
+.Ads-home-text h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+  
+.Ads-home-text h3:hover{
+    color: #ff6801;
+}
+  
+.right-content {
+    flex: 3;
+}
+  
+.right-content iframe {
+    width: 100%;
+    height: 265px;
+    border-radius: 20px;
+}
+
+
+/* CSS Phần thể loại sản phẩm */
+.container-category {
+    width: 100%;
+    height: auto;
+    padding: 0 5%;
+}
+
+.container-category h1 {
+    text-align: center;
+    color: #ff6801;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.row-category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1px));
+    gap: 40px;
+    justify-content: center;
+}
+
+.row-category .service {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.row-category .service a{
+    text-decoration: none;
+    color: black;
+}
+
+.row-category .service a:hover{
+    color: #fff;
+}
+
+.row-category .service i {
+    font-size: 40px;
+    /* margin-bottom: 10px; */
+    color: #00483d;
+}
+
+.row-category .service h2 {
+    font-weight: 600;
+    /* margin-bottom: 8px; */
+}
+
+.row-category .service:hover {
+    background: #00483d;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.row-category .service:hover i{
+    color: #fff;
+}
+
+
+/* CSS Phần Quảng cáo về chương trình khuyến mãi, ưu đãi */ 
+.pictures {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.pictures .pic-link-img img{
+    width: 100%; 
+    height: 250px;
+    padding: 0 10px;
+}
+    
+.pic-link-img {
+    display: flex;
+    margin: auto;
+}
+     
+.pic-link-img img {
+    border-radius: 20px;
+    margin: 5px;
+}
+
+
+/* CSS cho các nút trong toàn bộ web */
+.btn{
+    display: inline-block;
+    padding: 16px 30px;
+    margin-left: 150px;
+    background: white;
+    color: purple;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all .45s ease;
+}
+  
+.btn:hover{
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+  
+.btn-1{
+    display: inline-block;
+    padding: 16px 30px;
+    margin-left: auto;
+    width: 650px;
+    background: #00483d;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+}
+  
+.next-product .btn{
+   margin: auto; 
+   padding: 10px 30px;
+}
+  
+.next-product .btn:hover{
+    background: #00483d;
+    color: #fff;
+}
+
+
+
+/* CSS phần sản phẩm */
+.section-title {
+    text-align: center;
+}
+  
+.section-title img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.container-prod {
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 48px 32px;
+}
+ 
+.container-prod .title {
+    font-size: 30px;
+    color:#444;
+    text-transform: uppercase;
+    text-align: center;
+}
+ 
+.container-prod .products-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 32px;
+     grid-auto-rows: 1fr;
+     justify-content: center;
+     align-items: center; 
+}
+ 
+.container-prod .products-container .product {
+    text-align: center;
+    padding: 4px 2px;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    height: 460px;
+}
+ 
+.container-prod .products-container .product:hover {
+    outline: .32px solid #222;
+    outline-offset: 0;
+}
+ 
+.container-prod .products-container .product img {
+    width: 100%;
+    height: 200px;
+}
+ 
+.container-prod .products-container .product:hover img {
+    transform: scale(.9);
+}
+ 
+.container-prod .products-container .product h3 {
+    /* padding: 8px 0; */
+    font-size: 22px;
+    color:#444;
+}
+ 
+.container-prod .products-container .product:hover h3 {
+    color: #fc521d;
+}
+ 
+.container-prod .products-container .product .price {
+    font-size: 22px;
+    color:#444;
+}
+ 
+.products-container h3 {
+    color:#444;
+    padding: 8px 0;
+    font-size: 25px;
+}
+ 
+.products-container .stars {
+    padding: 16px 0;
+    font-size: 15px;
+}
+ 
+.products-container .stars i {
+    color:#27ae60;
+ }
+ 
+.products-container .stars span {
+    color:#999;
+}
+
+.products-container s{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products-container .price {
+    padding: 16px 0;
+    font-size: 40px;
+    color: #fc521d;
+}
+ 
+.products-container .buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+ 
+.products-container .buttons a {
+    flex: 1 1 20px;
+    padding: 16px;
+    font-size: 12px;
+    color: #444;
+    border: .1rem solid #444;
+    text-decoration: none;
+    border-radius: 5px;
+}
+ 
+.products-container .buttons a.cart {
+    background: #00483d;
+    color: #fff;
+}
+ 
+.products-container .buttons a.cart:hover {
+    background: #222;
+ }
+ 
+.products-container .buttons a.buy:hover {
+    background: #00483d;
+    color: #fff;
+}
+
+.products-container .buttons a.buys {
+    background: #fff;
+    color: #444;
+}
+
+.products-container .buttons a.buys:hover {
+    background: #00483d;
+    color: #fff;
+}
+
+
+/* CSS phần Laptop Custom */
+.Ads{
+    background-image: url(../images/laptop1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 12%;
+}
+  
+.Ads-text{
+    width: 100%;
+    height: 550px;
+    margin: auto;
+}
+  
+.Ads-text h3{
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+}
+
+.Ads-text h3:hover{
+    color: #ff6801;
+}
+
+
+/* CSS phần Footer */
+footer .footer-container {
+    background-color: #00483d;
+    border-radius: 10px;
+}
+  
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+  
+.footer-col ul {
+    list-style: none;
+}
+  
+.footer-col h4 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+  
+.footer-col ul li{
+    padding: 10px 0;
+}
+  
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: all .45s ease;
+}
+  
+.footer-col ul li a:hover{
+    color: yellow;
+    transform: translateX(5px);
+}
+  
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+.footer-row p a{
+  text-decoration: none;
+  color: yellow;
+}
+
+.footer-col .inputSubmit{
+    padding: 0 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+}
+  
+.col p{
+    color: white;
+}
+  
+.footer-row hr{
+    opacity: 0.7s;
+}
+  
+.footer-row .socialIcons i {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header-menu-bar {
+        height: auto;
+        padding: 10px;
+        position: static;
+    }
+
+    .header-menu-bar ul {
+        flex-direction: column;
+    }
+
+    .header-menu-bar ul li {
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        padding: 10px;
+    }
+
+    .container {
+        margin: 0 5%;
+    }
+
+    .left-content {
+        margin: 0;
+    }
+
+    .Ads-home-pic img {
+        width: 100%;
+    }
+
+    .right-content iframe {
+        height: 200px;
+    }
+
+    .container-category {
+        padding: 0 2%;
+    }
+
+    .container-category h1 {
+        font-size: 30px;
+    }
+
+    .row-category {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1px));
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header-menu-bar {
+        padding: 15px 5%;
+    }
+
+    .search-bar {
+        padding: 15px;
+    }
+
+    .container {
+        margin: 0 8%;
+    }
+
+    .Ads-home-pic img {
+        width: 100%;
+    }
+
+    .right-content iframe {
+        height: 220px;
+    }
+
+    .container-category {
+        padding: 0 3%;
+    }
+
+    .row-category {
+        gap: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+
+    .header-menu-bar {
+        padding: 20px 5%;
+    }
+
+    .search-bar {
+        padding: 20px;
+    }
+
+    .container {
+        margin: 0 10%;
+    }
+
+    .Ads-home-pic img {
+        width: 100%;
+    }
+
+    .right-content iframe {
+        height: 240px;
+    }
+
+    .container-category {
+        padding: 0 4%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+
+    .header-menu-bar {
+        padding: 25px 5%;
+    }
+
+    .search-bar {
+        padding: 25px;
+    }
+
+    .container {
+        margin: 0 12%;
+    }
+
+    .Ads-home-pic img {
+        width: 100%;
+    }
+
+    .right-content iframe {
+        height: 260px;
+    }
+}
